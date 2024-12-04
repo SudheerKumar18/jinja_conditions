@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <!--{% if age > 20 %}
+        <h1>sai is major</h1>
+        {% endif %}
+
+
+        {% if age < 17 %}
+            <h1>{{name}} Not eligible  </h1>
+        {% else %}
+            <h1>{{name}} is a eligible for voting </h1>
+        {% endif %}
+        
+        
+        {% if Gross > 900 %}
+            <h1 style="color:green;background:firebrick;padding:10px 15px;">{{name}} Pushpa  is a BlockBuster Movie</h1>
+        {% elif Gross > 500 and Gross < 700  %}
+            <h1>{{name}} Pushpa is a average Movie </h1>
+        {% else %}
+            <h1>{{name}} Pushpa Movie Disaster</h1>
+        {% endif %}
+        -->
+        {% if Gross > 200 %}
+            {% if Gross > 300 and Gross < 600 %}
+                <h1>{{name}} Pushpa Movie is Average Movie</h1>
+            {% else %}
+                <h2>{{name}} Pushpa Movie is Hit </h2>
+            {% endif %}
+        {% else %}
+            {% if Gross > 800 and Gross < 1000 %}
+                <h1>{{name}} Pushpa movie is a BlockBuster</h1>
+            {% else %}
+                <h2>{{name}} Pushpa movie is BreakEven </h2>
+            {% endif %}
+        {% endif %}
+        
+    </center>
+</body>
+</html>
